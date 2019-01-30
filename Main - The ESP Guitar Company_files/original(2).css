@@ -1,0 +1,9 @@
+@media (max-width: 767px) {
+  #forum_posts_page.show #forum_posts .forum_post_replies .forum_post_replies .forum_post_replies .forum_post {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+    border-left: 0;
+  }
+}

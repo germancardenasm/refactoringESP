@@ -1,0 +1,80 @@
+#downloads_page {
+  background: #fff;
+}
+#downloads_page h4 {
+  font-size: 21px;
+  margin-bottom: 7px;
+  margin-top: 0px;
+}
+#downloads_page #content {
+  margin-top: 15px;
+}
+#downloads_page #content .page-header {
+  border-bottom: none;
+}
+#downloads_page #content .boxed .boxed-header {
+  font-family: "BebasNeueRegular", Arial, sans-serif;
+  font-weight: normal;
+  font-size: 30px;
+  padding: 13px 0px 9px 15px;
+  border-left: 8px solid #fff
+  color: #fff;
+  background: #000;
+}
+#downloads_page #content .panel {
+  background: #e9f0f2;
+  border: 1px solid #a5cdd0;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15), 0px 0px 15px rgba(0, 0, 0, 0.05)inset;
+}
+
+#downloads_page #content .panel-content.boxed-content {
+  -webkit-column-count: 3;
+	-webkit-column-rule: 1px dotted #a5cdcf;
+	-webkit-column-gap: 4em;
+	-moz-column-count: 3;
+	-moz-column-rule: 1px dotted #a5cdcf;
+	-moz-column-gap: 4em;
+}
+@media (max-width: 1024px){
+  #downloads_page #content .panel-content.boxed-content {
+  -webkit-column-count: 2;
+	-webkit-column-rule: 1px dotted #a5cdcf;
+	-webkit-column-gap: 4em;
+	-moz-column-count: 2;
+	-moz-column-rule: 1px dotted #a5cdcf;
+	-moz-column-gap: 4em;
+  }}
+@media (max-width: 768px){
+  #downloads_page #content .panel-content.boxed-content {
+  -webkit-column-count: 1;
+	-webkit-column-rule: 1px dotted #a5cdcf;
+	-webkit-column-gap: 4em;
+	-moz-column-count: 1;
+	-moz-column-rule: 1px dotted #a5cdcf;
+	-moz-column-gap: 4em;
+    }}
+#downloads_page #content ul {
+  margin: 0px 0px 15px;
+	padding: 0px;
+}
+#downloads_page #content li {
+margin: 0px 0px 5px 0px;
+	padding: 0px;
+	list-style-type: none;
+	list-style-position: inside;
+	list-style-image: url(https://dk1xgl0d43mu1.cloudfront.net/user_files/esp/site_assets/000/001/494/original.png?1391812718);
+}
+#downloads_page #content li a {
+  color: #000000;
+	text-decoration: none;
+	padding: 1px 5px 0px 5px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	margin-left: 0px;
+  display: inline-block;
+}
+#downloads_page #content li a:hover {
+  background-color: #bb131a;
+	color: #fff;
+}

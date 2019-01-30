@@ -1,0 +1,81 @@
+#products_page.show {
+  background: #E3E3E5;
+}
+#products_page.show .panel.boxed {
+	box-shadow: none;
+	border: 0px;
+  background: none;
+  padding: 0px 0px;
+}
+@media (min-width: 320px) and (max-width: 568px) {
+#products_page.show .panel.boxed {
+	box-shadow: none;
+	border: 0px;
+  background: none;
+  padding: 20px 0px;
+}
+}
+#products_page.show .panel-heading {
+  margin: 0px;
+}
+#products_page.show .boxed .boxed-header {
+color: #fff;
+background: #B93532;
+margin-bottom: 15px;
+text-transform: uppercase;
+font-size: 14px;
+padding: 3px 6px;
+font-weight: 600;
+line-height: 20px;
+text-rendering: optimizelegibility;
+}
+#products_page.show .product .panel-heading.boxed-header {
+  display: none;
+}
+#products_page.show .product-details .body.section.span8 {
+  margin-left: 0px;
+margin-bottom: 0px;
+padding: 20px 30px 0px 0px;
+width: 70%;
+border-right: 1px solid #b0b0b0;
+font-weight: 400;
+line-height: 1.55em;
+font-size: 15px;
+}
+@media (min-width: 320px) and (max-width: 979px) {
+#products_page.show .product-details .body.section.span8 {
+width: 100%;
+border-right: 0px;
+}
+#products_page.show .product-details .row-fluid .span3 {
+display: inline-block;
+  float: none;
+  margin: 0px;
+}
+}
+#products_page.show .dl-horizontal dt {
+	color: #525251;
+  border-bottom: #fff;
+}
+#products_page.show .dl-horizontal dd {
+	color: #525251;
+  border-bottom: 1px solid #bbb;
+}
+@media (max-width: 979px) {
+#products_page.show .dl-horizontal {
+	width: 100%;
+  margin: 0px
+}
+}
+@media (min-width: 320px) and (max-width: 568px) {
+.product .boxed-content .header h1 {
+	font-family: "BebasNeueRegular", Arial, sans-serif;
+	font-size: 3.75em;
+  color: #000;
+  line-height: .75em;
+  margin-top: 0px;
+}
+}
+#products_page.show #product_carousel .carousel .item {
+  height: 100px;
+}

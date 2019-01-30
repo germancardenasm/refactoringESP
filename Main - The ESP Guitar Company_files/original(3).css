@@ -1,0 +1,27 @@
+.product_special_feature.span6 {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.product_special_feature.span6:first-child {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.product_special_feature .media{
+  margin-top: 0px;
+  margin-right: 10px;
+}
+.product_special_feature h5 {
+  text-rendering: auto; 
+  font-family: "BebasNeueRegular", Arial, sans-serif;
+  font-weight: normal; 
+  color: #545454;
+  padding-top: 1px;
+  font-size: 24px;
+}
+.product_special_feature img.content-image.pull-left {
+  border: 1px solid #838181;
+  background: rgba(255, 255, 255, 0.35);
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.25);
+  margin-right: 15px;
+  margin-bottom: 20px;
+}

@@ -1,0 +1,31 @@
+/* #user_bar .user_cart { display: none; } */
+
+.category_apparel #content .grid.thumbnails.products .thumbnail .thumbnail_img img, .category_apparel #content .grid.thumbnails.category_search .thumbnail .thumbnail_img img {
+  
+  width: 100%;
+  max-width: 100%;
+  top: 250px; 
+  left: 0;
+  transform: none;
+  -ms-transform: none;
+  -webkit-transform: none;
+}
+
+.category_apparel .product .product-image {
+  padding: 0;
+  background: none;
+}
+
+.category_apparel .product .product-details {
+  float: left;
+  margin-left: 2.5641%;
+}
+
+#products_page.category_apparel #page_header {
+  display: block;
+}
+
+#products_page.show.category_apparel .content_votes {
+  margin: 0;
+}
+

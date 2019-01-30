@@ -1,0 +1,47 @@
+jQuery(function(){
+  var $ = jQuery;
+
+  $(document).ready(function() {
+    $('body:not(.grow_admin)').css({ opacity: 1 });
+  });
+  $('#product_model').on('change', function() {
+    $('form.shopatron_content').find('input[name=partNumber]').get(0).value = $(this).val();
+  });
+});
+
+function load_related_products() {
+  setTimeout(function(){
+    $j('#related_products').empty();
+    $j(".shptrn_ci_details a").each(function(index) {
+      var r_div = 'related_' + index
+      $j('<div id=' + r_div + '></div>').appendTo('#related_products');
+      $j('#' + r_div).load($j(this).attr('href').split('?')[0] + '/related?layout=none');
+    });
+    setTimeout(function(){
+      $j(function () {
+        var getAttributes = function (element) {
+          var requestData = {}, options = {}, i, attrName, toUpper;
+          toUpper = function (str, match) {
+            return match.toUpperCase();
+          };
+          for (i = 0; i < element.attributes.length; i++) {
+            attrName = element.attributes[i].name.replace(/_(.)/, toUpper);
+            if ($j.inArray(attrName, ['onsuccess', 'onerror', 'oncomplete', 'onclickSuccess', 'onclickError', 'onclickComplete']) >= 0) {
+              options[attrName.substr(0, 2) === 'on' ? attrName.substr(2) : attrName] = new Function(element.attributes[i].value);
+            }
+            requestData[attrName] = element.attributes[i].value;
+          }
+          return {
+            requestData: requestData,
+            options: options
+          };
+        };
+        $j('*').filter(function () { return this.nodeName === 'TRON:ATCBUTTON'; }).each(function (ndx, element) {
+          var data = getAttributes(element);
+          $j(element).replaceWith('<div id="atc_button_' + ndx + '"></div>');
+          Shopatron('#atc_button_' + ndx).addToCartButton(data.requestData, data.options);
+        });
+      });
+    }, 1000);
+  }, 500);
+}

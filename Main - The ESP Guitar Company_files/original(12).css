@@ -1,0 +1,2 @@
+body .us_show { display: none; }
+body.country_us .us_show { display: block; }
